@@ -19,7 +19,9 @@ jobs:
           node-version: 20.x
           cache: 'npm'
       - name: Install NPM dependencies
-        run: npm i
+        run: npm install
+      - name: Install Paywright 
+        run: npx playwright install
       - name: Run local envronment
         run: npm start &
       - name: Run all Unit tests
