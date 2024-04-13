@@ -20,10 +20,10 @@ jobs:
           cache: 'npm'
       - name: Install NPM dependencies
         run: npm i
-      - name: Run all Unit tests
-        run: npm run test:unit
       - name: Run local envronment
         run: npm start &
+      - name: Run all Unit tests
+        run: npm run test:unit
       - name: Run all UI tests
         run: npm run test:ui
       - name: Display softuni username
